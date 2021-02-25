@@ -52,14 +52,13 @@ def get_views(session_id, formats):
     with engine.connect() as connection:
         df = pd.read_sql_query(query, connection)
 
-    if not formats == 'absolute':
-        pass
-
     response = {}
     line = df.iloc[0]
+    total = line.sum()
     for col in df.columns:
         response[col] = str(line[col])
-
+        if formats == 'percents':
+            response[col] = f'{line[col]/total:.1%}'
     return response
 
 
@@ -160,6 +159,7 @@ def feature_extractor(data):
 app = Flask(__name__)
 api = Api(app)
 # http://127.0.0.1:5000/stats/u17882
+# http://127.0.0.1:5000/stats/u17882?format=percents
 api.add_resource(Stats, '/stats/<string:session_id>')
 # http://127.0.0.1:5000/gender-prediction/u17882
 api.add_resource(Gender_prediction, '/gender-prediction/<string:session_id>')
