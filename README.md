@@ -15,7 +15,7 @@ notebooks/1.0-em-gender-prediction-model.ipynb
 
 Схема URL, запросов и ответов изложена ниже.
 
-Сервисы реализованы в модуле: /src/rest_api_services/app.py
+Сервисы реализованы в модуле: src/rest_api_services/app.py
 
 ## Сервис доступа к данным
 
