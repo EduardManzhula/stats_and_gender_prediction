@@ -8,3 +8,6 @@
 """
 
 # import pytest
+# http://127.0.0.1:5000/stats/u17882
+# http://127.0.0.1:5000/stats/u17882?format=percents
+# http://127.0.0.1:5000/gender-prediction/u17882
