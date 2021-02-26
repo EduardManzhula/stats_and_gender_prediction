@@ -41,7 +41,7 @@ notebooks/1.0-em-gender-prediction-model.ipynb
 | Метод HTTP     | URI  | Действие |
 |:---------------|:-----|:---------|
 | GET            | http://[hostname]/stats/[session_id]?format=[absolute\|percents] | Возвращает количество посмотров каждой категории для пользователя с сессией session_id. По-умолчанию в абсолютных значениях, но в параметре запроса format можно указать процентное представление.         |
-| GET            | http://[hostname]/prediction-gender/[session_id] | Возвращает предсказание пола посетителя на основе данных о просмотре категорий пользователя с сессией session_id         |
+| GET            | http://[hostname]/gender-prediction/[session_id] | Возвращает предсказание пола посетителя на основе данных о просмотре категорий пользователя с сессией session_id         |
 
 ### Ответы сервиса статистики
 Для absolute:   
