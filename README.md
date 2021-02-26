@@ -2,7 +2,7 @@
 В рамках проекта создается прототип модели предсказания пола пользователей и реализовываются веб-сервисы.
 
 ## Прототипирование модели
-Доступны данные просмотра продукции на сайте. Необходимо предсказывать пол посетителей. 
+Доступны данные просмотра продукции в интернет-магазине: [dataset]. Необходимо предсказывать пол посетителей. 
 
 Изучение, обработка данных и обучения модели предсказания оформлены в виде [Jupyter] блокнота. В блокноте описана метрика оценки качества модели и методика тестирования.
 
@@ -73,7 +73,7 @@ src/rest_api_services
    ```
 
 ## Общая структура проекта
-
+Для инициалиции проекта использована библиотека [pyscaffold] плагином [dsproject].
 ```
 ├── AUTHORS.md              <- List of developers and maintainers.
 ├── CHANGELOG.md            <- Changelog to keep track of new features and fixes.
@@ -110,3 +110,6 @@ src/rest_api_services
 
 [conda]: https://docs.conda.io/
 [Jupyter]: https://jupyter.org/
+[pyscaffold]: https://pyscaffold.org/en/latest/
+[dsproject]: https://github.com/pyscaffold/pyscaffoldext-dsproject
+[dataset]: https://relational.fit.cvut.cz/dataset/FTP
