@@ -73,7 +73,7 @@ src/rest_api_services
    ```
 
 ## Общая структура проекта
-Для инициалиции проекта использована библиотека [pyscaffold] плагином [dsproject].
+Для инициалиции проекта использована библиотека [pyscaffold] с плагином [dsproject].
 ```
 ├── AUTHORS.md              <- List of developers and maintainers.
 ├── CHANGELOG.md            <- Changelog to keep track of new features and fixes.
