@@ -4,7 +4,6 @@ from pandas import read_sql_query
 
 def get_views(session_id):
     engine = init_engine()
-
     query = f"""
     WITH 
     stats AS (
@@ -26,8 +25,6 @@ def get_views(session_id):
     WHERE   session.gender is not NULL
     AND     session.session_id ='{session_id}'
     """
-
     with engine.connect() as connection:
         df = read_sql_query(query, connection)
-
     return df

@@ -7,8 +7,8 @@ def get_stats(session_id, formats):
     line = df.iloc[0]
     total = line.sum()
     for col in df.columns:
-        if formats == 'percents':
-            views = f'{line[col]/total:.1%}'
+        if formats == 'percentage':
+            views = f'{line[col]/total:.0%}'
         else:
             views = str(line[col])
         response[col] = views
