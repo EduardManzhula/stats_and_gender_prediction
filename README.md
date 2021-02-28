@@ -87,6 +87,12 @@ src/rest_api_services
 "message": "Internal Server Error",   
 "status": 500   
 }   
+   
+### Тесты
+Используется платформа [Pytest].   
+Написаны юнит-тесты, проверяющие основую функциональность сервисов
+#### Каталог тестов
+test/    
 
 ## Инициализация проекта
 Для того, чтобы установить необходимое окружение:
@@ -141,3 +147,4 @@ src/rest_api_services
 [pyscaffold]: https://pyscaffold.org/en/latest/
 [dsproject]: https://github.com/pyscaffold/pyscaffoldext-dsproject
 [dataset]: https://relational.fit.cvut.cz/dataset/FTP
+[Pytest]: https://docs.pytest.org/en/stable/
