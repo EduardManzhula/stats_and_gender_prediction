@@ -6,7 +6,12 @@ from api.resources.errors import InvalidFormat, InvalidSessionID, SessionNotFoun
 
 
 def test_stats():
-    answer_abs = {"views_a": "1", "views_b": "1", "views_c": "1", "views_d": "2"}
+    answer_abs = {
+        "views_a": "1",
+        "views_b": "1",
+        "views_c": "1",
+        "views_d": "2"
+    }
     answer_per = {
         "views_a": "20%",
         "views_b": "20%",
