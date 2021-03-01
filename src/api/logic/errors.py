@@ -1,8 +1,7 @@
 from re import match
-from api.resources.errors import InvalidSessionID
-from api.resources.errors import InvalidFormat
-from api.resources.errors import SessionNotFound
+
 from api.db.errors import get_session_id
+from api.resources.errors import InvalidFormat, InvalidSessionID, SessionNotFound
 
 
 def check_session_id(session_id):
@@ -15,6 +14,6 @@ def check_session_id(session_id):
 
 
 def check_format(formats):
-    valid = ['absolute', 'percentage']
+    valid = ["absolute", "percentage"]
     if formats not in valid:
         raise InvalidFormat

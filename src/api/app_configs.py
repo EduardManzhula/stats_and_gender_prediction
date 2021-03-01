@@ -1,1 +1,1 @@
-DB_URL = 'mysql://guest:relational@relational.fit.cvut.cz:3306/ftp'
+DB_URL = "mysql://guest:relational@relational.fit.cvut.cz:3306/ftp"

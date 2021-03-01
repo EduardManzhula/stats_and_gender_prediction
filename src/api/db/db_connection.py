@@ -1,6 +1,8 @@
-import sqlalchemy
-from api import app_configs
 from functools import lru_cache
+
+import sqlalchemy
+
+from api import app_configs
 
 
 @lru_cache

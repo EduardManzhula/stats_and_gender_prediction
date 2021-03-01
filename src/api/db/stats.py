@@ -1,11 +1,12 @@
-from api.db.db_connection import init_engine
 from pandas import read_sql_query
+
+from api.db.db_connection import init_engine
 
 
 def get_views(session_id):
     engine = init_engine()
     query = f"""
-    WITH 
+    WITH
     stats AS (
         SELECT session_id,
                COUNT(DISTINCT category_a) AS views_a,
