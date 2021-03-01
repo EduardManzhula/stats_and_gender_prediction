@@ -7,8 +7,10 @@ from api.resources.errors import InvalidSessionID
 
 
 def test_stats():
-    assert get_stats('u17882', 'absolute') == {"views_a": "1", "views_b": "1", "views_c": "1", "views_d": "2"}
-    assert get_stats('u17882', 'percentage') == {"views_a": "20%", "views_b": "20%", "views_c": "20%", "views_d": "40%"}
+    answer_abs = {"views_a": "1", "views_b": "1", "views_c": "1", "views_d": "2"}
+    answer_per = {"views_a": "20%", "views_b": "20%", "views_c": "20%", "views_d": "40%"}
+    assert get_stats('u17882', 'absolute') == answer_abs
+    assert get_stats('u17882', 'percentage') == answer_per
     with raises(SessionNotFound):
         get_stats('u97882', 'absolute')
     with raises(InvalidFormat):
